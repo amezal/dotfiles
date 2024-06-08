@@ -1,0 +1,7 @@
+import = [
+    "~/.config/alacritty/themes/themes/one_dark.toml"
+]
+
+[font]
+normal = { family = "Ubuntu Mono", style = "Regular" }
+
