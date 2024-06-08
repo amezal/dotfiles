@@ -1,0 +1,21 @@
+[difftool]
+	prompt = true
+[diff]
+	tool = nvimdiff
+[difftool "nvimdiff"]
+	cmd = "nvim -d \"$LOCAL\" \"$REMOTE\""
+
+[user]
+email = amezal01@hotmail.com
+name = "Armando Meza"
+
+[core]
+editor = nvim
+
+[includeIf "gitdir:~/ooqia/"]
+path = ~/ooqia/.gitconfig
+[credential "https://github.com"]
+        helper =
+        helper = !/usr/bin/gh auth git-credential
+[credential]
+        helper = store
