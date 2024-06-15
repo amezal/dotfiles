@@ -621,6 +621,8 @@ require('lazy').setup({
             'vue',
           },
         },
+        emmet_language_server = {},
+        prettier = {},
         zls = {},
         pyright = {},
         lua_ls = {
@@ -700,6 +702,8 @@ require('lazy').setup({
         lua = { 'stylua' },
         -- Conform can also run multiple formatters sequentially
         python = { 'autopep8' },
+        html = { 'prettier' },
+        css = { 'prettier' },
         --
         -- You can use a sub-list to tell conform to run *until* a formatter
         -- is found.
@@ -707,7 +711,6 @@ require('lazy').setup({
       },
       formatters = {
         autopep8 = {
-          -- append_args = { '--max-line-length 60' },
           append_args = { '--max-line-length', '160' },
         },
       },
