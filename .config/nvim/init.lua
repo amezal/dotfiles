@@ -652,6 +652,7 @@ require('lazy').setup({
       local ensure_installed = vim.tbl_keys(servers or {})
       vim.list_extend(ensure_installed, {
         'stylua', -- Used to format Lua code
+        'autopep8',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
@@ -698,11 +699,17 @@ require('lazy').setup({
       formatters_by_ft = {
         lua = { 'stylua' },
         -- Conform can also run multiple formatters sequentially
-        -- python = { "isort", "black" },
+        python = { 'autopep8' },
         --
         -- You can use a sub-list to tell conform to run *until* a formatter
         -- is found.
         -- javascript = { { "prettierd", "prettier" } },
+      },
+      formatters = {
+        autopep8 = {
+          -- append_args = { '--max-line-length 60' },
+          append_args = { '--max-line-length', '160' },
+        },
       },
     },
   },
