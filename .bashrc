@@ -162,3 +162,7 @@ export PATH="$HOME/.local/zig/:$PATH"
 eval "$(zoxide init bash --cmd=cd)"
 
 source /usr/share/doc/fzf/examples/key-bindings.bash
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH=$BUN_INSTALL/bin:$PATH
