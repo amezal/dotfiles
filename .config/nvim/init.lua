@@ -617,7 +617,11 @@ require('lazy').setup({
           },
           filetypes = {
             'javascript',
+            'javascriptreact',
+            'javascript.tsx',
             'typescript',
+            'typescriptreact',
+            'typescript.tsx',
             'vue',
           },
         },
