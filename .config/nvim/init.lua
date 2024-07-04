@@ -336,7 +336,7 @@ require('lazy').setup({
         opts = {
           sort_by = 'case_sensitive',
           view = {
-            width = 30,
+            adaptive_size = true,
           },
           renderer = {
             group_empty = true,
@@ -522,7 +522,6 @@ require('lazy').setup({
           -- Rename the variable under your cursor.
           --  Most Language Servers support renaming across files, etc.
           map('<leader>rn', vim.lsp.buf.rename, '[R]e[n]ame')
-
           -- Execute a code action, usually your cursor needs to be on top of an error
           -- or a suggestion from your LSP for this to activate.
           map('<leader>ca', vim.lsp.buf.code_action, '[C]ode [A]ction')
