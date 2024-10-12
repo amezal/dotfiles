@@ -801,6 +801,7 @@ require('lazy').setup({
         python = { 'autopep8' },
         html = { 'prettier' },
         css = { 'prettier' },
+        scss = { 'prettier' },
         --
         -- You can use a sub-list to tell conform to run *until* a formatter
         -- is found.
