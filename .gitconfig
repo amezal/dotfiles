@@ -19,3 +19,9 @@ path = ~/ooqia/.gitconfig
         helper = !/usr/bin/gh auth git-credential
 [credential]
         helper = store
+
+[alias]
+    hide = update-index --skip-worktree
+    unhide = update-index --no-skip-worktree
+    unhide-all = ! git ls-files -v | grep '^S' | cut -c3- | xargs git unhide --
+    hidden = ! git ls-files -v | grep '^S' | cut -c3-
