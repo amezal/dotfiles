@@ -383,7 +383,9 @@ require('lazy').setup({
         --     i = { ['<c-enter>'] = 'to_fuzzy_refine' },
         --   },
         -- },
-        -- pickers = {}
+        defaults = {
+          layout_strategy = "vertical",
+        },
         pickers = {
           buffers = {
             ignore_current_buffer = true,
