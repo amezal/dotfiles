@@ -384,6 +384,17 @@ require('lazy').setup({
         --   },
         -- },
         -- pickers = {}
+        pickers = {
+          buffers = {
+            ignore_current_buffer = true,
+            sort_lastused = true,
+            mappings = {
+              i = {
+                ["<c-d>"] = "delete_buffer",
+              }
+            }
+          }
+        },
         extensions = {
           ['ui-select'] = {
             require('telescope.themes').get_dropdown(),
